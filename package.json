@@ -1,5 +1,5 @@
 {
-  "name": "BetaBOT",
+  "name": "BOT_STYLE",
   "version": "1.0.0",
   "description": "bot wa yang mudah untuk digunakan",
   "main": "index.js",
@@ -34,15 +34,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wempy24/wempybot"
+    "url": "git+https://github.com/beni1910/"
   },
   "keywords": [
     "k"
   ],
-  "author": "Abdul Muttaqin",
+  "author": "Benniismael",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wempy24/wempybot/issues"
+    "url": "https://github.com/beni1910/termux-bs/issues"
   },
-  "homepage": "https://github.com/wempy24/wempybot#readme"
+  "homepage": "https://github.com/beni1910/termux-bs#readme"
 }
