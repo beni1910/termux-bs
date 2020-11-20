@@ -13,7 +13,7 @@ const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
 /////////////////
-const BotName = 'BOT_STYLE☄'; 
+const BotName = 'BOT_STYLEâ˜„'; 
 const instagram = 'https://instagram.com/Beni_230'; 
 const whatsapplu = '0821-1449-9086'; 
 const kapanbotaktif = 'Jam 12:00 - 10:00 malam'; 
@@ -188,7 +188,7 @@ conn.sendMessage(id, teks, MessageType.text)
 if (text.includes("!nulis")){
   const teks = text.replace(/!nulis /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/nulis?text=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
-    let hasil = `Silahkan download hasil dibawah ini agar hasilnya lebih bagus! 👌\n\n${res.data.result}`;
+    let hasil = `Silahkan download hasil dibawah ini agar hasilnya lebih bagus! ðŸ‘Œ\n\n${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -196,7 +196,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/nulis?text=${teks}&apiKey=zFuV88pxc
 if (text.includes("!ytmp3")){
 const teks = text.replace(/!ytmp3 /, "")
 axios.get(`https://st4rz.herokuapp.com/api/yta?url=${teks}`).then((res) => {
-    let hasil = `Audio telah tersedia pada link di bawah, silahkan klik link dan download hasilnya\n👇👇👇👇👇👇👇👇👇\n\nJudul: ${res.data.title}\n\nUkuran audio: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+    let hasil = `Audio telah tersedia pada link di bawah, silahkan klik link dan download hasilnya\nðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡\n\nJudul: ${res.data.title}\n\nUkuran audio: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -204,7 +204,7 @@ axios.get(`https://st4rz.herokuapp.com/api/yta?url=${teks}`).then((res) => {
 if (text.includes("!yt")){
 const teks = text.replace(/!yt /, "")
 axios.get(`https://st4rz.herokuapp.com/api/ytv?url=${teks}`).then((res) => {
-    let hasil = `Video telah tersedia pada link di bawah, silahkan klik link dan download hasilnya\n👇👇👇👇👇👇👇👇👇\n\nJudul: ${res.data.title}\n\nUkuran video: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+    let hasil = `Video telah tersedia pada link di bawah, silahkan klik link dan download hasilnya\nðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡\n\nJudul: ${res.data.title}\n\nUkuran video: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -212,7 +212,7 @@ axios.get(`https://st4rz.herokuapp.com/api/ytv?url=${teks}`).then((res) => {
 if (text.includes("!fb")){
 const teks = text.replace(/!fb /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/epbe?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
-    let hasil = `Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\n👇👇👇👇👇👇👇👇👇\n\nJudul: ${res.data.title}\n\nUkuran: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+    let hasil = `Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\nðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡\n\nJudul: ${res.data.title}\n\nUkuran: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -220,7 +220,7 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/epbe?url=${teks}&apiKey=zFuV88p
 if (text.includes("!ig")){
 const teks = text.replace(/!ig /, "")
 axios.get(`https://st4rz.herokuapp.com/api/ig?url=${teks}`).then((res) => {
-    let hasil = `Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\n👇👇👇👇👇👇👇👇👇\n\nUkuran: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+    let hasil = `Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\nðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡\n\nUkuran: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -228,14 +228,14 @@ axios.get(`https://st4rz.herokuapp.com/api/ig?url=${teks}`).then((res) => {
 if (text.includes("!twt")){
 const teks = text.replace(/!twt /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/twit?url=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then((res) => {
-    let hasil = `Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\n👇👇👇👇👇👇👇👇👇\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
+    let hasil = `Berhasil! silahkan klik link di bawah untuk mendownload hasilnya!\nðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡\n\nSize: ${res.data.filesize}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
 if (text.includes("!tiktok")) {
 const tictoc = text.replace(/!tiktok /, "")
 axios.get(`https://st4rz.herokuapp.com/api/tiktok?url=${tictoc}`).then((res) => {
-     let titoe = `Berhasil!!! Silahkan klik link dibawah ini untuk mendownload hasilnya! \n👇👇👇👇👇👇👇👇👇\n\nJudul: ${res.data.deskripsi} \n\nDurasi: ${res.data.durasi}\n\nNama: ${res.data.nama}\n\nUrl: ${res.data.urlvideo}`;
+     let titoe = `Berhasil!!! Silahkan klik link dibawah ini untuk mendownload hasilnya! \nðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡ðŸ‘‡\n\nJudul: ${res.data.deskripsi} \n\nDurasi: ${res.data.durasi}\n\nNama: ${res.data.nama}\n\nUrl: ${res.data.urlvideo}`;
 conn.sendMessage(id, titoe, MessageType.text);
 })
 }
@@ -249,7 +249,7 @@ axios.get(`https://st4rz.herokuapp.com/api/wiki?q=${text}`).then((res) => {
 if (text.includes("!sholat")){
   const teks = text.replace(/!sholat /, "")
   axios.get(`https://mhankbarbar.herokuapp.com/api/jadwalshalat?daerah=${teks}&apiKey=zFuV88pxcIiCWuYlwg57`).then ((res) =>{
-  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\n👉Imsyak : ${res.data.Imsyak}\n👉Subuh : ${res.data.Subuh} WIB\n👉Dzuhur : ${res.data.Dzuhur}WIB\n👉Ashar : ${res.data.Ashar} WIB\n👉Maghrib : ${res.data.Maghrib}\n👉Isya : ${res.data.Isya} WIB\n👉Tengah malam : ${res.data.Dhuha} WIB`;
+  let hasil = `Jadwal sholat di ${teks} hari ini adalah\n\nðŸ‘‰Imsyak : ${res.data.Imsyak}\nðŸ‘‰Subuh : ${res.data.Subuh} WIB\nðŸ‘‰Dzuhur : ${res.data.Dzuhur}WIB\nðŸ‘‰Ashar : ${res.data.Ashar} WIB\nðŸ‘‰Maghrib : ${res.data.Maghrib}\nðŸ‘‰Isya : ${res.data.Isya} WIB\nðŸ‘‰Tengah malam : ${res.data.Dhuha} WIB`;
   conn.sendMessage(id, hasil, MessageType.text);
 })
 }
@@ -426,7 +426,7 @@ const get = require('got')
     var meninggal = (body[0]['meninggal']);
     var dirawat = (body[0]['dirawat']);
     console.log(body[0]['name'])
-    conn.sendMessage(id,`😭🤒DATA WABAH COVID-19 TERBARU DI INDONESIA😔😊\n\n😔Positif ==> ${positif} \n😊Sembuh ==> ${sembuh} \n😭Meninggal ==> ${meninggal}\n🤒Dirawat ==> ${dirawat}`, MessageType.text);
+    conn.sendMessage(id,`ðŸ˜­ðŸ¤’DATA WABAH COVID-19 TERBARU DI INDONESIAðŸ˜”ðŸ˜Š\n\nðŸ˜”Positif ==> ${positif} \nðŸ˜ŠSembuh ==> ${sembuh} \nðŸ˜­Meninggal ==> ${meninggal}\nðŸ¤’Dirawat ==> ${dirawat}`, MessageType.text);
 }
    if (text.includes("!quotes"))
    {
@@ -655,6 +655,7 @@ if (is == '!katabijak')
                conn.sendMessage(id, randombijak, MessageType.text)
             });
       }   
+   }
    if (messageType === MessageType.text)
    {
       let is = m.message.conversation.toLocaleLowerCase()
@@ -672,6 +673,42 @@ if (is == '!katabijak')
                conn.sendMessage(id, randomnix, MessageType.text)
             });
       }   
+   }
+   
+if (msg.body.startsWith("!berita ")) {
+	   const keyword = msg.body.split("!berita ")[1];
+const { Detik } = require('indo-news-scraper');
+const imageToBase64 = require('image-to-base64');
+var nomorlink = Math.floor(Math.random() * 5);
+Detik.scrap(keyword).then(res => {
+ console.log(res);
+ var gambar = res[0].img;
+ var judul = res[0].title;
+ var url = res[0].url;
+ 
+   imageToBase64(gambar) // Path to the image
+        .then(
+            (response) => {
+ 
+    const media = new MessageMedia('image/jpeg', response);
+    client.sendMessage(msg.from, media, {
+      caption: `
+Judul Berita :
+ *${judul}*
+Baca Berita Disini:
+${url}
+` });
+            }
+			
+        )
+        .catch(
+            (error) => {
+                console.log(error); // Logs an error if there was one
+            }
+        )
+    
+});
+   }
    
    if (text.includes("!randomanime"))
    {
