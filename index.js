@@ -641,42 +641,8 @@ if (text.includes("!alay")){
 		conn.sendMessage(id, hasil, MessageType.text)
 	})
 }
-
-if (is == '!katabijak')
-      {
-
-         fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/katabijax.txt')
-            .then(res => res.text())
-            .then(body =>
-            {
-               let tod = body.split("\n");
-               let pjr = tod[Math.floor(Math.random() * tod.length)];
-               let randombijak = pjr.replace(/pjrx-line/g, "\n");
-               conn.sendMessage(id, randombijak, MessageType.text)
-            });
-      }   
-   }
-   if (messageType === MessageType.text)
-   {
-      let is = m.message.conversation.toLocaleLowerCase()
-
-      if (is == '!fakta')
-      {
-
-         fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/faktaunix.txt')
-            .then(res => res.text())
-            .then(body =>
-            {
-               let tod = body.split("\n");
-               let pjr = tod[Math.floor(Math.random() * tod.length)];
-               let randomnix = pjr.replace(/pjrx-line/g, "\n");
-               conn.sendMessage(id, randomnix, MessageType.text)
-            });
-      }   
-   }
-   
-if (msg.body.startsWith("!berita ")) {
-	   const keyword = msg.body.split("!berita ")[1];
+else if (text.includes("!berita "))
+	      var nama = text.split("!berita ")[1]
 const { Detik } = require('indo-news-scraper');
 const imageToBase64 = require('image-to-base64');
 var nomorlink = Math.floor(Math.random() * 5);
@@ -695,6 +661,7 @@ Detik.scrap(keyword).then(res => {
       caption: `
 Judul Berita :
  *${judul}*
+
 Baca Berita Disini:
 ${url}
 ` });
