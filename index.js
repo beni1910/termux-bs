@@ -706,45 +706,7 @@ ${url}
     });
     }
    
-   if (msg.body.toLowerCase().startsWith("!alkitab")) {
-
-	// .split berfungsi membagi / memisahkan (text / string) kedalam json array menurut delimeter / parameternya
-        const pesan = msg.body.split(" ")
-        const surat = pesan[1]
-        const ayat = pesan[2]
-
-        if (surat == undefined || ayat == undefined) {
-            msg.reply("Ups, Format Salah !!")
-        } else {
-            const splitAyat = ayat.split(":")
-            const chapter = splitAyat[0]
-            const verse = splitAyat[1]
-            const result = await searchOnBible(surat, chapter, verse);
-
-            if (result.status == 200) {
-                let fullVerse = '';
-		
-		// .map berfungsi melooping json array , dalam .map kita bisa mendapatkan value dan index sijson tsb
-		// sebenernya fine" aja kalo mau pake foreach , for , dll , cuma cara ini lebih ringkes dan readable mnurut gw
-
-                result.verse.map((data, index) => {
-                    isNumbering = verse == undefined ? `${index + 1}. ` : '';
-                    fullVerse += `${isNumbering}${data.text}\n\n`
-                })
-                msg.reply(`${result.title}\n\n${fullVerse}`)
-            } else {
-                msg.reply('Maaf! Server sedang sibuk, coba beberapa saat lagi.')
-                //msg.reply(`Ups, Getting error\n${result.message}`)
-            }
-        }
-      
-    }   
-    if (msg.body.toLowerCase() == 'hai') {
-        msg.reply("Hai! Alkitab WA berjalan dalam format :  \n1. Untuk menampilkan seluruh Pasal : #alkitab (Nama Kitab) (Pasal), \ncontoh: #alkitab Matius 1 \n2. Untuk menampilkan ayat tertentu: #alkitab (Nama Kitab) (Pasal):(Ayat), contoh : #alkitab Matius 2:2");
-    } 
-
-});
-} 
+   
    
 
 
